@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../feature/cars/header'
 import CarsList from '../feature/cars/list'
 
 
@@ -11,7 +12,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://kit.fontawesome.com/070ae587ea.js" crossorigin="anonymous"></script>
       </Head>
-      <main>
+      <main className="container pt-1">
+        <Header></Header>
         <div className="container pt-1">
           <CarsList></CarsList>
         </div>
