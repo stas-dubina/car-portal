@@ -1,15 +1,6 @@
 import clientPromise from "../../../lib/mongodb";
 import { COUNTRIES } from "../../../lib/countries";
 
-
-const stats = {
-    total: 123,
-    countries: {
-        "germany": 1,
-        "italy": 0,
-        "usa": 1
-    }
-}
 export default async (req, res) => {
     try {
         const client = await clientPromise;
