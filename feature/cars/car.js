@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChargingStation } from '@fortawesome/free-solid-svg-icons'
+import { faSuperpowers } from '@fortawesome/free-brands-svg-icons'
+
 export default function Car(props) {
     const car = props.car;
     return (
@@ -8,10 +12,12 @@ export default function Car(props) {
                     className="align-middle">{car.title} {car.year}</span></h5>
                 <ul className="list-unstyled">
                     <li className="card-text-item-list">
-                        <i className="fa-solid fa-charging-station"></i><span className="card-text-item-text">{car.fuel}</span>
+                        <FontAwesomeIcon icon={faChargingStation} />
+                        <span className="card-text-item-text">{car.fuel}</span>
                     </li>
                     <li className="card-text-item-list">
-                        <i className="fa-brands fa-superpowers"></i><span className="card-text-item-text">{car.hp} hp</span>
+                        <FontAwesomeIcon icon={faSuperpowers} />
+                        <span className="card-text-item-text">{car.hp} hp</span>
                     </li>
                 </ul>
                 <a href="car.html?id=${car.id}" className="btn btn-primary">Go somewhere</a>
