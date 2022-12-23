@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Header from '../feature/cars/header'
 import CarsList from '../feature/cars/list'
 
 
@@ -14,7 +13,6 @@ export default function Home() {
       </Head>
       <main>
         <div className="container pt-1">
-          <Header></Header>
           <CarsList></CarsList>
         </div>
       </main>
